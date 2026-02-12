@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hot Beans ¦ Careers</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,13 +24,76 @@
             <ul>
                 <a href="index.html">Home</a>
                 <a href="about.html">About Us</a>
-                <a href="contact.html">Contact</a>
                 <a href="careers.html" style="color: #d32f2f; background: #ffe6e6;">Careers</a>
+                <a href="contact.html">Contact</a>
             </ul>
         </nav>
     </header>
 
+    <main>
+        <section class="vacancies">
+            <h2>Vacancies</h2>
 
+            <ul class="vacancy-list">
+                <li class="vacancy">
+                    <article>
+                        <h3>Web Developer</h3>
+                        <p class="meta">Remote · Full-time · Remote-friendly</p>
+                        <p class="summary">Build and maintain our public website and internal tools to improve customer
+                            experience and streamline operations.</p>
+
+                        <details>
+                            <summary>View details</summary>
+                            <section class="details">
+                                <h4>Responsibilities</h4>
+                                <ul>
+                                    <li>Develop and maintain front-end features using HTML, CSS, and JavaScript (React
+                                        preferred).</li>
+                                    <li>Collaborate with designers and product to implement accessible, responsive UI.
+                                    </li>
+                                    <li>Integrate with backend APIs and ensure performant, tested code.</li>
+                                </ul>
+
+                                <h4>Requirements</h4>
+                                <ul>
+                                    <li>3+ years building web applications.</li>
+                                    <li>Strong proficiency with HTML, CSS, and modern JavaScript frameworks
+                                        (React/Vue/Angular).</li>
+                                    <li>Experience with RESTful APIs, Git, and automated testing.</li>
+                                </ul>
+
+                                <p class="compensation">Competitive salary + benefits; DOE</p>
+
+                                <a class="apply"
+                                    href="mailto:jobs@hotbeans.example?subject=Application%20-%20Web%20Developer">Apply
+                                    by email</a>
+                            </section>
+                        </details>
+                    </article>
+                </li>
+            </ul>
+
+            <p class="note">Don't see a role that fits? Send a general application to <a
+                    href="mailto:jobs@hotbeans.example">jobs@hotbeans.example</a>, or fill out the form below:</p>
+        </section>
+        <section class="application-form">
+            <h2>General Application</h2>
+            <form>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="cover-letter">Cover Letter:</label>
+                <textarea id="cover-letter" name="cover-letter" rows="6" required></textarea>
+
+                <label for="resume">Resume/CV:</label>
+                <input type="file" id="resume" name="resume" required />
+
+                <button onclick="submit()" type="submit">Submit Application</button>   
+            </form>
+    </main>
 </body>
 
 </html>
