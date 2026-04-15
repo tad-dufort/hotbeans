@@ -7,66 +7,48 @@
     <title>Hot Beans ¦ Home</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>
-            < <img src="logo.svg" alt="Hot Beans Logo" /> >
-            Hot Beans
-        </h1>
-        <nav>
-            <ul>
-                <a href="index.html" style="color: #d32f2f; background: #ffe6e6;">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="careers.html">Careers</a>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <h1>
+                <span class="bracket">&lt;</span>
+                <img src="./assets/logo.svg" alt="Hot Beans Logo" />
+                <span class="bracket">&gt;</span>
+                Hot Beans
+            </h1>
+            <nav>
+                <ul>
+                    <a href="#home" class="active">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#careers">Careers</a>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>Welcome to Hot Beans</h2>
-            <p>Your partner in cutting-edge web development solutions.</p>
-        </section>
+    <div id="content"></div>
 
-        <section>
-            <h3>Our Portfolio</h3>
-            <p>Explore some of our recent projects that showcase our expertise in web development.</p>
-            <ul class="portfolio">
-                <li>
-                    <h2>Project A</h2>
-                    <p class="summary">E-commerce Website</p>
-                    <p class="more">A full-featured e-commerce platform with product search, cart, secure checkout, and performance optimisations. Built with accessibility and conversion in mind.</p>
-                </li>
-                <li>
-                    <h2>Project B</h2>
-                    <p class="summary">Social Media Platform</p>
-                    <p class="more">A responsive social platform supporting posts, likes, and real-time notifications. Focused on scalable front-end architecture and progressive enhancement.</p>
-                </li>
-                <li>
-                    <h2>Project C</h2>
-                    <p class="summary">Portfolio Website</p>
-                    <p class="more">A sleek portfolio showcasing projects, case studies, and contact methods with lightweight animations and image optimisations for fast load times.</p>
-                </li>
-            </ul>
-        </section>
-    </main>
     <footer>
         <div class="footer-inner">
             <div>
-                <p>Inquiries? Contact us at <a href="mailto:info@hotbeans.com">info@hotbeans.com</a> or +44 1594 123456</p>
+                <p>Inquiries? <a href="mailto:info@hotbeans.com">info@hotbeans.com</a> · +44 1594 123456</p>
                 <p>&copy; 2024 Hot Beans. All rights reserved.</p>
             </div>
             <div class="socials">
-                <img src="linkedin.svg" alt="LinkedIn Profile" />
-                <img src="github.svg" alt="GitHub Profile" />
-                <img src="x.svg" alt="X Profile" />
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="./assets/linkedin.svg" alt="LinkedIn" /> LinkedIn
+                </a>
+                <a href="https://github.com" target="_blank">
+                    <img src="./assets/github.svg" alt="GitHub" /> GitHub
+                </a>
+                <a href="https://x.com" target="_blank">
+                    <img src="./assets/x.svg" alt="X" /> X
+                </a>
             </div>
         </div>
     </footer>
